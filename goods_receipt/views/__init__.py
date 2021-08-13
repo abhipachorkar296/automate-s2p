@@ -1,0 +1,3 @@
+from goods_receipt.views.goods_receipt import goods_receipt
+from goods_receipt.views.goods_receipt import goods_receipt_list
+from goods_receipt.views.goods_receipt import goods_receipt_non_fw_invoice

@@ -1,0 +1,77 @@
+{
+    "event_info": {
+        "event_id": 1,
+        "parent_event_id": 0,
+        "enterprise_id": 1,
+        "buyer_id": 1,
+        "event_name": "Buy",
+        "event_type": "RFQ",
+        "event_start_datetime": "2021-05-17T09:49:43.583737Z",
+        "event_end_datetime": "2021-05-17T09:49:43.583737Z",
+        "buyer_billing_address_id": 1,
+        "buyer_shipping_address_id": 2,
+        "event_delivery_datetime": "2021-05-17T09:49:43.583737Z",
+        "payment_terms_code": "USD",
+        "created_by_user_id": 1,
+        "created_by_name": "Pratyush",
+        "created_by_phone": "xxxxxx991",
+        "created_by_email": "jaiswalprat@gmail.com",
+        "status": "ongoing",
+        "last_modified_by_user_id": 1,
+        "created_datetime": "2021-06-07T10:32:08.520126Z",
+        "modified_datetime": "2021-06-07T10:32:08.520157Z",
+        "deleted_datetime": null
+    },
+    "event_item_list": [
+        {
+            "item_info": {
+                "event_line_item_id": 1,
+                "event_id": 1,
+                "item_id": 1,
+                "buyer_item_id": "200012 Iphone - Black",
+                "description": "Just an exp",
+                "measurement_unit_id": 1,
+                "meausrement_unit": "meters",
+                "desired_quantity": "100.0000000000",
+                "currency_code": "USD",
+                "desired_price": "950.0000000000",
+                "opening_bid": "950.0000000000",
+                "total_amount": "100000.0000000000",
+                "allow_substitutes": false,
+                "insurance_required": false,
+                "post_to_global_market_place": false
+            },
+            "item_attribute": [
+                {
+                    "event_line_item_id": 1,
+                    "attribute_id": 1,
+                    "attribute_value": "BLUE"
+                },
+                {
+                    "event_line_item_id": 1,
+                    "attribute_id": 2,
+                    "attribute_value": "4GB"
+                }
+            ],
+            "item_seller": [
+                {
+                    "event_line_item_id": 1,
+                    "event_id": 1,
+                    "seller_id": 1,
+                    "buyer_approval_required": false,
+                    "approved_by_buyer": null,
+                    "invitation_status": null
+                },
+                {
+                    "event_line_item_id": 1,
+                    "event_id": 1,
+                    "seller_id": 2,
+                    "buyer_approval_required": false,
+                    "approved_by_buyer": null,
+                    "invitation_status": null
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,27 @@
+{
+    "payment_info":{
+        "payment_category":"invoice_payment",
+        "to_entity_id":3,
+        "currency_code":"USD",
+        "base_payment_amount":1.01,
+        "payment_mode" : "ll",
+        "payment_reference" : "ll",
+        "applied_balance_amount" : 1.01,
+        "total_amount" : 2.02,
+        "comments" : "ll"
+    },
+    "invoice_item_list":[
+        {
+            "invoice_line_item_id":1,
+            "amount_applied":2.02
+        }
+    ],
+    "balance_usage":[
+        {
+            "balance_id":1,
+            "used_amount": 1.01,
+            "available_amount":1.01,
+            "comments":"ll"
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "purchase_order_info": {
+        "event_id": 1,
+        "purchase_order_creation_datetime": "2021-06-10T06:46:43.344343Z",
+        "buyer_id": 1,
+        "buyer_purchase_order_id": "1234",
+        "buyer_entity_name": "Factwise",
+        "buyer_billing_address_id": 1,
+        "buyer_shipping_address_id": 2,
+        "buyer_approver_user_id": 1,
+        "buyer_approver_name": "Pratyush",
+        "buyer_contact_user_id": 1,
+        "buyer_contact_name": "Abhishek",
+        "buyer_contact_phone": "9xxxxxx12",
+        "buyer_contact_email": "jaiswalpratyush2015@gmail.com",
+        "is_freight_purchase_order": false,
+        "seller_id": 2,
+        "seller_entity_name": "Apple",
+        "seller_address_id": 2,
+        "seller_contact_user_id": 2,
+        "seller_contact_name": "Nishant",
+        "seller_contact_phone": "9xxxxx12",
+        "seller_contact_email": "apple1@gmail.com",
+        "seller_acknowledgement_user_id": 2,
+        "seller_acknowledgement_datetime": "2021-05-17T09:49:43.583737Z",
+        "delivery_schedule_type": "kfiuw",
+        "payment_terms_code": "USD",
+        "purchase_order_discount_percentage": "0.0000000000",
+        "buyer_comments": "Nothing",
+        "status": "draft"
+    },
+    "purchase_order_buyer_information": [
+        {
+            "purchase_order_id": 1,
+            "buyer_id": 1,
+            "identification_id": null,
+            "identification_name": "PAN",
+            "identification_value": ""
+        }
+    ],
+    "purchase_order_seller_information": [
+        {
+            "purchase_order_id": 1,
+            "seller_id": 2,
+            "identification_id": null,
+            "identification_name": "PAN",
+            "identification_value": ""
+        }
+    ],
+    "purchase_order_item_list": [
+        {
+            "item_info": {
+                "purchase_order_line_item_id": 2,
+                "buyer_item_id": "20014",
+                "buyer_item_name": "20014 IPhone - White",
+                "buyer_item_description": "",
+                "due_date": "2021-05-17T09:49:43.583737Z",
+                "rate": "100.0000000000",
+                "quantity": "100.0000000000",
+                "max_acceptable_quantity": "300.0000000000",
+                "max_shipping_cost": "0.0000000000",
+                "rate_alternate": null,
+                "quantity_alternate": null,
+                "taxes_and_charges_percentage": "0.0000000000",
+                "taxes_and_charges_value": "0.0000000000",
+                "total_order_value": "10000.0000000000",
+                "modified_datetime": "2021-06-10T06:50:42.691059Z",
+                "purchase_order_id": 1,
+                "item_id": 1,
+                "currency_code": "USD",
+                "measurement_unit_id": 1,
+                "measurement_unit_alternate_id": null
+            },
+            "item_charge": [
+                {
+                    "purchase_order_line_item_id": 2,
+                    "charge_name": "sgst",
+                    "charge_type": null,
+                    "charge_percentage": "2.5000000000"
+                }
+            ],
+            "item_attribute": [
+                {
+                    "purchase_order_line_item_id": 2,
+                    "attribute_id": 1,
+                    "attribute_value": "6GB"
+                }
+            ]
+        }
+    ]
+}
+

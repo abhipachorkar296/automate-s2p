@@ -1,0 +1,102 @@
+import requests
+import json
+
+def post_draft_invoice_list(user_id=2, purchase_order_id=1):
+    base_url = "http://127.0.0.1:8000/invoice"
+    endpoint = "/draft_invoice_list/"+str(user_id)+"/"+str(purchase_order_id)
+
+    abs_url = base_url+endpoint
+
+    data = {
+        "invoice_info": {
+            "invoice_type": "goods",
+            "created_by_user_id": 1,
+            "seller_invoice_id": "124",
+            "provisional_invoice_id": "",
+            "delivery_document_id": "",
+            "purchase_order_id": 1,
+            "buyer_purchase_order_id": "131",
+            "invoice_creation_datetime": "2021-06-22T07:40:55.646607Z",
+            "seller_id": 3,
+            "seller_entity_name": "Apple",
+            "seller_address_id": 1,
+            "seller_contact_user_id": 2,
+            "seller_contact_name": "Apps",
+            "seller_contact_phone": "99xxxx",
+            "seller_contact_email": "apple1@gmail.com",
+            "buyer_id": 1,
+            "buyer_entity_name": "Factwise",
+            "buyer_billing_address_id": 2,
+            "buyer_shipping_address_id": 2,
+            "buyer_contact_user_id": 1,
+            "buyer_contact_name": "Matt ",
+            "buyer_contact_phone": "91xxx91",
+            "buyer_contact_email": "matt@factwise.io",
+            "invoice_discount_percentage": "0.0000000000",
+            "seller_comments": "",
+            "status": "issued"
+        },
+        "invoice_item_list": [
+            {
+                "item_info": {
+                    "purchase_order_line_item_id": 1,
+                    "item_id": 1,
+                    "buyer_item_id": "20013",
+                    "buyer_item_name": "20013 IPhone - White",
+                    "buyer_item_description": "",
+                    "seller_comments": "",
+                    "measurement_unit_id": 1,
+                    "rate": 100,
+                    "quantity_invoiced": 30,
+                    "shipping_per_unit": 5,
+                    "amount_invoiced": 3450,
+                    "amount_due": 0,
+                    "amount_paid": 0,
+                    "currency_code": "USD",
+                    "payment_terms_reference_date_type": "receipt_date",
+                    "payment_terms_days": 10,
+                    "payment_due_date": "2021-05-17T09:49:43.583737Z"
+                },
+                "item_charge": [
+                    {
+                        "charge_name": "GST",
+                        "charge_percentage": 5
+                    },
+                    {
+                        "charge_name": "CGST",
+                        "charge_percentage": 5
+                    }
+                ],
+                "item_attribute": [
+                    {
+                        "attribute_id": 1,
+                        "attribute_value": "6GB"
+                    }
+                ]
+            }
+        ],
+        "invoice_buyer_information": [
+            {
+                "buyer_id": 1,
+                "identification_id": 1,
+                "identification_name": "GST",
+                "identification_value": "1234557"
+            }
+        ],
+        "invoice_seller_information": [
+            {
+                "seller_id": 3,
+                "identification_id": 3,
+                "identification_name": "CGST",
+                "identification_value": "1234557"
+            }
+        ]
+    }
+    headers = {
+        "Content-Type": "application/json"
+    }
+    abs_url = base_url+endpoint
+    response = requests.post(abs_url, data=json.dumps(data), headers=headers)
+    print(response.status_code)
+
+post_draft_invoice_list(2, 1)

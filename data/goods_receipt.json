@@ -1,0 +1,9 @@
+{
+    "buyer_goods_receipt_id" : "1134",
+    "receiving_user_name" : "ll",
+    "receiving_user_email" : "a@b.c",
+    "measurement_unit_id" : 1,
+    "delivered_quantity" : 0.5,
+    "receiving_user_id" : 1,
+    "receipt_quantity_accepted" : 0.5
+}

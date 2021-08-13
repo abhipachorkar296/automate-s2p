@@ -1,0 +1,10 @@
+user_id int [pk]
+  enterprise_id int [ref: > enterprises.enterprise_id]
+  user_email Email [not null]
+  user_firstname varchar(100) [not null]
+  user_lastname varchar(100) [not null]
+  user_phonenumber varchar(100) [not null]
+  
+  user_homepage varchar(100)
+  user_role varchar(100) [null]
+  user_picture_url varchar(500) [null]
